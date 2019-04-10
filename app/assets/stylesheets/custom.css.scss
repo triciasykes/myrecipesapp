@@ -1,0 +1,38 @@
+.bg-custom {
+  background-color: #83a4ee;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+  border-radius: 25px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, .07), rgba(0, 0, 0, .07)), asset-url("jumbo.jpg");
+  background-size: cover;
+
+}
+
+.jumbotron h1, h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.btn-xlarge {
+  background-color: #83a4ee;
+  font-size: 1.5em;
+  border: none;
+
+}
