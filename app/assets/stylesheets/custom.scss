@@ -20,7 +20,7 @@
 }
 
 .jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, .07), rgba(0, 0, 0, .07)), asset-url("jumbo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .07)), asset-url("jumbo.jpg");
   background-size: cover;
 
 }
@@ -35,6 +35,13 @@
   font-size: 1.5em;
   border: none;
 }
-well {
-  background-color: #333
+.description {
+  margin-top: 0;
+
+}
+.card a:link,
+      a:visited {
+  color: #83a4ee;
+  text-decoration: none;
+
 }
