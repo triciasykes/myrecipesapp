@@ -1,0 +1,36 @@
+<%= render 'shared/title', title: "Sign Up Today!" %>
+<%= render 'shared/errors', obj: @chef %>
+
+<div class="row">
+  <div class="col-12">
+    <%= form_for(@chef, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+      <div class="form-group row">
+       <%= f.label :chefname, "Name", class: "col-sm-2 col-form-label" %>
+       <div class="col-sm-10">
+         <%= f.text_field :chefname, class: "form-control", placeholder: "Your name" %>
+       </div>
+      </div>
+      <div class="form-group row">
+       <%= f.label :email, class:"col-sm-2 col-form-label" %>
+       <div class="col-sm-10">
+         <%= f.text_field :email, class: "form-control", placeholder:"Email" %>
+       </div>
+     </div>
+     <div class="form-group row">
+      <%= f.label :password, class:"col-sm-2 col-form-label" %>
+      <div class="col-sm-10">
+        <%= f.password_field :password, class: "form-control", placeholder:"Choose a password" %>
+      </div>
+    </div>
+    <div class="form-group row">
+     <%= f.label :password_confirmation,"Confirm Password", class:"col-sm-2 col-form-label" %>
+     <div class="col-sm-10">
+       <%= f.password_field :password_confirmation, class: "form-control", placeholder:"Confirm password" %>
+     </div>
+   </div>
+   <div class="form-group">
+       <div class="col-md-offset-2 col-md-10">
+         <%= f.submit "Create my account", class: "btn btn-primary btn-lg btn-xlarge" %>
+  </div>
+</div>
+<% end %>
