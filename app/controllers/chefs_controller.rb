@@ -7,7 +7,7 @@ class ChefsController < ApplicationController
   def create
     @chef = Chef.new(chef_params)
     if @chef.save
-      flash[:notice] = "Sign Up Successful!"
+      flash[:notice] = "Welcome to the community, #{@chef.chefname}!"
       redirect_to chef_path(@chef)
     else
       render "chefs/new"
